@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fef2f2;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-banner {
+  background: url('https://source.unsplash.com/1600x600/?garbage,overflowing') center/cover no-repeat;
+  padding: 5rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(220, 38, 38, 0.6); /* red overlay */
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main Layout */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Info Cards */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.info-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.info-card:hover {
+  transform: translateY(-4px);
+}
+.info-card h2 {
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+.info-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.info-card li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+/* Button */
+.back-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background 0.3s;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Garbage Information</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Hero Section -->
+
+
+  <!-- Header -->
+<header>
+  <!-- Logo in left corner -->
+  <img src="ttttttttttttttttttttt.avif" alt="Logo" class="logo">
+
+  <h1>Community Insights!!</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#categories">Categories</a>
+    <a href="#community">Community</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#awareness">Awareness</a>
+    <a href="#contact">Contact</a>
+    <a href="gamification/index.html">Trash Tokens</a>
+     <a href="map/reporter.html">Login</a>
+
+     
+  </nav>
+</header>
+
+
+
+  <main>
+    <!-- About -->
+
+    <section id="about" class="fade-in">
+      <h2>About This Platform</h2>
+      <p class="center">This platform provides information on garbage disposal, cleanliness, and waste management issues within the community. It highlights problem areas and helps spread awareness for a cleaner, greener environment.</p>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="fade-in">
+      <h2>Garbage Issue Categories</h2>
+      <div class="grid grid-cols-3">
+        <div class="card"><i class="fas fa-trash fa-2x icon"></i><h3>Overflowing Bins</h3><p>Bins that are full and need timely clearance.</p><a href="overflowing-bins.html" class="btn">Read More</a></div>
+        <div class="card"><i class="fas fa-truck fa-2x icon"></i><h3>Missed Pickups</h3><p>Scheduled garbage pickups that were not completed.</p><a href="missed-pickups.html" class="btn">Read More</a></div>
+        <div class="card"><i class="fas fa-dumpster fa-2x icon"></i><h3>Illegal Dumping</h3><p>Unlawful disposal of waste in open areas.</p><a href="illegal-dumping.html" class="btn">Read More</a></div>
+        <div class="card"><i class="fas fa-broom fa-2x icon"></i><h3>Street Litter</h3><p>Scattered garbage affecting public areas.</p><a href="street-litter.html" class="btn">Read More</a></div>
+        <div class="card"><i class="fas fa-recycle fa-2x icon"></i><h3>Recycling Issues</h3><p>Problems with segregation and recycling of waste.</p><a href="recycling-issues.html" class="btn">Read More</a></div>
+        <div class="card"><i class="fas fa-exclamation-circle fa-2x icon"></i><h3>Other Concerns</h3><p>Any other cleanliness-related issues related to it.</p><a href="other-concerns.html" class="btn">Read More</a></div>
+      </div>
+    </section>
+
+    <!-- Community Updates -->
+    <section id="community" class="fade-in">
+      <h2>Community Updates</h2>
+      <div class="grid grid-cols-2">
+        <div class="card"><strong>Ward 12:</strong> Overflowing bin near central park reported yesterday.</div>
+        <div class="card"><strong>Ward 5:</strong> Illegal dumping spotted near river bank last week.</div>
+        <div class="card"><strong>Ward 8:</strong> Missed garbage pickup on 3rd Cross Street this week.</div>
+        <div class="card"><strong>Ward 14:</strong> Street litter issue resolved after community cleanup drive.</div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="fade-in">
+  <h2>Cleanup Drive Gallery</h2>
+  <div class="grid grid-cols-3 gallery">
+    <img src="img21.jpg" alt="Community cleaning street">
+    <img src="DEB_7206.JPG" alt="Kids helping with cleanup">
+    <img src="tytyytyyty.jpeg" alt="Sorting recyclables">
+    <img src="30052018_dadarbeachcleanup_01.jpg" alt="Removing plastic waste">
+    <img src="llll.jpeg" alt="Team cleanup drive success">
+     <img src="jjjjjj.png" alt="Removing plastic waste">
+  </div>
+</section>
+
+
+
+    <!-- Awareness -->
+    <section id="awareness" class="fade-in">
+      <h2>Awareness & Statistics</h2>
+      <div class="grid grid-cols-3">
+        <div class="card"><div class="stats" id="totalReports">0</div><p class="center">Total community reports</p></div>
+        <div class="card"><div class="stats" id="resolved">0%</div><p class="center">Resolved issues</p></div>
+        <div class="card"><div class="stats" id="volunteers">0</div><p class="center">Active volunteers</p></div>
+      </div>
+      <div class="center">
+     
+        <button class="btn" onclick="joinVolunteer()">Join as Volunteer</button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        
+      </form>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+  <p>© 2025 Community Garbage Information | Built for awareness and cleanliness</p>
+  <div class="social-icons">
+    <a href="@cleaner.garbage.community" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon">
+    </a>
+  </div>
+</footer>
+
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody">More details about the selected issue will appear here.</p>
+    </div>
+  </div>
+
+  <!-- Report Form -->
+  <div id="reportForm" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h3>Report Garbage Issue</h3>
+      <form onsubmit="submitReport(event)">
+        <label>Name:</label><input type="text" required><br>
+        <label>Issue Type:</label><input type="text" required><br>
+        <label>Location:</label><input type="text" required><br>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="corner-buttons">
+  <a href="login.html" id="loginBtn" class="btn small-btn">Log In</a>
+  <a href="signup.html" id="signupBtn" class="btn small-btn">Sign Up</a>
+  <button id="logoutBtn" class="btn small-btn hidden">Log Out</button>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const loginBtn = document.getElementById("loginBtn");
+  const signupBtn = document.getElementById("signupBtn");
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if (sessionStorage.getItem("userEmail")) {
+    loginBtn.classList.add("hidden");
+    signupBtn.classList.add("hidden");
+    logoutBtn.classList.remove("hidden");
+  }
+
+  logoutBtn.addEventListener("click", () => {
+    sessionStorage.removeItem("userEmail");
+    window.location.href = "index.html";
+  });
+});
+</script>
+
+
+  <script>
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      // Jab button click hoga tab map folder ka page open hoga
+      window.location.href = "index.html/map/reporter.html";
+    });
+  </script>
+
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>

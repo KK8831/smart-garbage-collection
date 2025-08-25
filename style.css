@@ -1,0 +1,216 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: 'Poppins', sans-serif; background: #f3f4f6; color: #1f2937; line-height: 1.6;}
+
+/* Hero */
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?environment,community') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero h1 {font-size: 2.5rem; margin-bottom: 1rem;}
+.hero p {font-size: 1.2rem; margin-bottom: 1.5rem;}
+.hero-btn {background: #22c55e; padding: .8rem 1.5rem; border-radius: 8px; text-decoration: none; color: white; font-weight: 600;}
+.hero-btn:hover {background: #16a34a;}
+
+header {background: linear-gradient(90deg,#16a34a,#22c55e); color: white; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000;}
+header h1 {font-size: 1.8rem; margin-bottom: .5rem;}
+nav {display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;}
+nav a {color: white; text-decoration: none; font-weight: 600; transition: color .3s;}
+nav a:hover {color: #d1fae5;}
+
+section {padding: 3rem 1rem; max-width: 1200px; margin: auto;}
+h2 {color: #166534; font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;}
+.grid {display: grid; gap: 1.5rem;}
+@media(min-width:640px){.grid-cols-2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid-cols-3{grid-template-columns:repeat(3,1fr)}}
+
+.card {background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 6px 16px rgba(0,0,0,0.1); transition: transform .3s, box-shadow .3s;}
+.card:hover {transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15);}
+.card .icon {color:#16a34a; margin-bottom:.5rem;}
+
+.stats {text-align: center; font-size: 2rem; font-weight: 700; color: #16a34a;}
+footer {background: #111827; color: #9ca3af; text-align: center; padding: 2rem 1rem; margin-top: 3rem;}
+.center {text-align: center;}
+
+.btn {background:#16a34a;color:white;padding:.5rem 1rem;margin-top:1rem;border:none;border-radius:8px;cursor:pointer;transition:.3s;}
+.btn:hover{background:#15803d;}
+
+.fade-in {opacity: 0; transform: translateY(20px); transition: opacity .8s ease, transform .8s ease;}
+.fade-in.show {opacity: 1; transform: translateY(0);}
+
+/* Modal */
+.modal {display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.5);}
+.modal-content {background:white;margin:10% auto;padding:20px;border-radius:12px;max-width:500px;position:relative;}
+.close {position:absolute;top:10px;right:15px;font-size:1.5rem;cursor:pointer;}
+form input, form textarea{width:100%;padding:8px;margin:8px 0;border:1px solid #ccc;border-radius:6px;}
+
+/* Gallery */
+.gallery img {width:100%;border-radius:10px;transition:transform .3s;}
+.gallery img:hover {transform:scale(1.05);}
+
+/* Contact */
+.contact-form {max-width:600px;margin:auto;display:flex;flex-direction:column;}
+.contact-form input, .contact-form textarea {padding:.8rem;margin:.5rem 0;border:1px solid #ccc;border-radius:8px;}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('waste-management-eco-friendly-living-2d-web-banner-poster-garbage-separation-man-and-woman-sorting-trash-flat-characters-on-cartoon-background-printable-patches-colorful-web-elements-vector.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #1f2937;
+  line-height: 1.6;
+}
+/* Navigation split */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left a {
+  margin-right: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Sign in / Sign up buttons */
+nav a.btn {
+  background: #ffffff22;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+nav a.btn:hover {
+  background: #d1fae5;
+  color: #166534;
+}
+.small-btn {
+  font-size: 0.9rem;
+}
+/* Corner buttons (Sign In / Sign Up) */
+.corner-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.corner-buttons a.btn {
+  background: #ffffff22;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.corner-buttons a.btn:hover {
+  background: #d1fae5;
+  color: #166534;
+}
+
+.small-btn {
+  font-size: 0.9rem;
+}
+header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 40px;   /* adjust as needed */
+  width: auto;
+}
+.btn {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #15803d, #16a34a);
+}
+.btn-map {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-map:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+.dark-text {
+  color: #111;   /* very dark gray, nearly black */
+  font-weight: 500;
+}
+.highlight-text {
+  font-size: 1.6rem;          /* bigger text */
+  font-weight: 700;           /* bold */
+  color: #000000;                /* white text */
+  
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+.logo {
+  width: 120px;   /* good size for a header */
+  height: auto;   /* keeps aspect ratio */
+  display: block;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #28a745; /* same green as header */
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer .social-icons .icon {
+  width: 22px;
+  height: 22px;
+  filter: invert(100%); /* makes icons white */
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+
+
